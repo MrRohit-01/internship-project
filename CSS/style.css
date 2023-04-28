@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&family=Saira&family=Salsa&family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+nav{
+ background-color: red;
+}
+
+.logo{
+    position: absolute;
+    left: 2.5rem;
+    height: 5.5rem;
+
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    gap: 1.8rem;
+    background-color: #000;
+    color: #fff;
+    height: 5.5rem;
+    font-weight: lighter;
+}
+.background-image1{
+    background-image: url(../IMAGE/Picture1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 12.7rem 2rem;
+
+}
+.line{
+    width: 6rem;
+    padding: 0rem 0.5rem;
+    height: 30rem;
+
+
+}
+.bits{
+    background-color: white;
+    width: 1rem;
+    height: 0.2rem;
+    margin:0.3rem 0rem 1.67rem 0.3rem;
+
+}
+.line1{
+    width: 2.5rem;
+}
+.line2{
+    width: 1.5rem;
+}
+.line3{
+    width: 1rem;
+}
+.line4{
+    width: 0.8rem;
+}
+.line5{
+    width: o.5rem;
+}
+.line7{
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 100;
+    writing-mode: vertical-rl; 
+    margin: 7rem 0.5rem 0rem 0.1rem;
+    color: #fff;
+}
+
+.line8{
+    height: 5rem;
+    width: 0.1rem;
+    background-color: #fff;
+    margin: 1.5rem 0.5rem 0rem 0.8rem;
+}
+
+.main-content {
+    padding: 1.3rem 3.1rem;
+}
+
+.page-1{
+    color: #fff;
+}
+
+#headline{
+    font-family: 'Salsa', cursive;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+#headline > span{
+    color: #277CDE;
+}
+
+#below-line{
+    font-size: 1.2rem;
+    font-family: 'Saira', sans-serif;
+    font-weight: 100;
+}
+
+#below-line > span{
+    font-size: 2rem;
+}
+.page-2{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    height: inherit;
+    align-items: center;
+}
+.text-content{
+    text-align: center;
+    background-color: inherit;
+    height: 58vh;
+    width: 32vw;
+    padding: 4.5rem 3rem 0rem 0.1rem;
+    color: #fff;
+}
+.text-content > h1{
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    font-weight: 100;
+}
+.text-content > h3{
+    text-align: left;
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding-top: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    word-spacing: 0.13rem;
+    font-weight: 100;
+    line-height: 2rem;
+  }
+  .page-2{
+    height: 100vh;
+    background-color: #000;
+  }
