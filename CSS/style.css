@@ -3,10 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
-
+    /* box-sizing: border-box;   */
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 nav{
  background-color: red;
 }
@@ -159,19 +163,9 @@ nav > ul{
 }
 /* page-3 */
 .page-3{
-    height: 110vh;
+    height: 120vh;
     background-color: #000;
     color: #fff;
-}
-.page-3 > p{
-    height: 0.1rem;
-    font-size: 18rem;
-    position: relative;
-    top: -13rem;
-    padding-left: 8rem;
-    font-family: 'Saira', sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 10px white;
 }
 .heading{
     text-align: center;
@@ -200,11 +194,16 @@ nav > ul{
 .heading span{
     color: #277CDE;
 }
-    
-.group-pic{
-    height: 500px;
-    width: 600px;
-    object-fit: cover;
+
+.page-3 > p{
+    height: 0.1rem;
+    font-size: 18rem;
+    position: relative;
+    top: -10rem;
+    padding-left: 8rem;
+    font-family: 'Saira', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 7px white;
 }
 .content-3{
     display: flex;
@@ -213,41 +212,116 @@ nav > ul{
     overflow: hidden;
     padding-top: 4rem;
 }
+.group-pic{
+    width: 39rem;
+    object-fit: cover;
+}
 .text-3{
-    height: 500px;
-    width: 600px;
+    height: 29rem;
+    width: 34rem;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 6rem;
-    font-size: 1.7rem;
+    padding-top: 10rem;
+    font-size: 1.9rem;
     padding-left: 5.3rem;
 }
 /* page-4 */
 .page-4{
-    height: 110vh;
+    height: 120vh;
     background-color: #000;
 }
 .head-4{
     color: white;
     font-family: 'secular one', sans-serif;
     text-align: center;
+    height: 8.5rem;
+
 }
  .head-4 > h1{
     font-size: 7rem;
     font-weight: 100;
     letter-spacing: 0.5rem;
-    opacity: 10%;
+    opacity: 20%;
 }
 .head-4 > p{
     position: relative;
     top: -5rem;
     font-size: 3rem;
 }
-.page-4> p{
-    color: #fff;
-    height: 0.1rem;
-    font-size: 18rem;
+.page-4> .numbers{
+    font-size: 17rem;
     font-family: 'Saira', sans-serif;
     color: transparent;
-    -webkit-text-stroke: 10px white;
+    -webkit-text-stroke: 7px white;
+    margin: -7rem 8rem 0rem 64rem;
+    clear: left;
 }
+.content-4{
+    display: flex;
+    margin-top: -4rem;
+}
+.jumba{
+    width:44rem;
+    margin-left: 11rem;
+}
+.text > p{
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+    text-align: start;
+    padding: 7rem 3rem 0rem 5rem;
+    font-size: 1.6rem;
+}
+/* page-5 */
+.page-5{
+    height: 140vh;
+    background-color: #000;
+    background-image: url(../IMAGE/dance-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    
+}
+.page-5 > p {
+    font-size: 17rem;
+    float: left;
+    margin: 0rem 0rem 0rem 8rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Saira', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 7px white;
+}
+.heading-5{
+    color: #fff;
+    padding: 3rem;
+    font-family: 'secular one', sans-serif;
+    text-align: start;
+    padding-left: 1rem;
+    float: right;
+}
+.heading-5 > p:nth-child(1){
+    font-size: 7.7rem;
+    opacity: 15%;
+    letter-spacing: 0.1rem;
+    margin-right: 11rem;
+}
+.heading-5 > p:nth-child(2){
+    font-size: 3rem;
+    margin-top: -4.5rem;
+    margin-left: 10rem;
+    
+}
+.heading-5 > p:nth-child(3){
+    font-size: 1.5rem;
+    margin-left: 17rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.heading-5 > p:nth-child(3) > span{
+    color: #277CDE;
+}
+.p-1{
+    position: relative;
+    top: -41rem;
+    left: 55rem;
+}
+
