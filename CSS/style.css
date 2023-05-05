@@ -3,18 +3,11 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box;   */
+    box-sizing: border-box;  
     scroll-padding-top: 1rem;
     scroll-behavior: smooth;
     scroll-snap-align: start;
 }
-html{
-    scroll-behavior: smooth;
-}
-nav{
- background-color: red;
-}
-
 .logo{
     position: absolute;
     left: 2.5rem;
@@ -273,7 +266,7 @@ nav > ul{
 }
 /* page-5 */
 .page-5{
-    height: 140vh;
+    height: 100vh;
     background-color: #000;
     background-image: url(../IMAGE/dance-3.jpg);
     background-repeat: no-repeat;
@@ -319,9 +312,122 @@ nav > ul{
 .heading-5 > p:nth-child(3) > span{
     color: #277CDE;
 }
-.p-1{
+.icon{
+    display: flex;
+    align-items: flex-end;
+    height: 80%;
+    margin-bottom: 9rem;
+}
+.profile{
+    width: 13rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+.p-11{
+    margin-left: -0.9rem;
+}
+.p-2{
+    margin-left: 15rem;
+}
+.name{
+    width: 16rem;
+}
+/* page-6 */
+.page-6{
+    background-color: #000;
+    height: 160vh;
+    font-family: 'Saira', sans-serif;
+}
+.page-6> p{
+    font-size: 17rem;
+    color: transparent;
+    -webkit-text-stroke: 7px white;
+    margin: -3rem 8rem -7rem 64rem;
+    clear: left;
+    z-index: 5;
+}
+.head-6{
+    color: white;
+    font-family: 'secular one', sans-serif;
+    text-align: center;
+    height: 8.5rem;
+    padding-top: 6rem;
+
+}
+ .head-6 > h1{
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    opacity: 20%;
+}
+.head-6 > p{
     position: relative;
-    top: -41rem;
-    left: 55rem;
+    top: -5rem;
+    font-size: 3rem;
+    height: 17rem;
+}
+.pricing{
+    height: 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 13rem;
+    margin-left: 11rem;
+
+}
+.sub1--option-1{
+    width: 35%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+/* it selects all the images under this classes */
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > h1{
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 0rem 1rem 0rem;
+}
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > img{
+    height: 25%;
+    width: 60%;
+    margin: 0rem 4rem;
+    background-color: #fff;
+}
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > p{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0rem auto 0rem auto;
+}
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul{
+    font-size: 1.5rem;
+    margin: -2.5rem 5rem 0rem 5rem;
+    padding: 1rem 0rem;
+}
+:where(.sub1--option-1 > ul,.sub1--option-2 > ul,.sub1--option-3 > ul) > li{
+    list-style-image: url(../IMAGE/check-circle-32.png);
+    margin: 1rem 0rem 0rem 0rem;
+}
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > span{
+    font-weight: bold;
+}
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button{
+    padding: 1rem;
+    width: 35%;
+    margin: 0rem 7rem;
+    font-size: 1rem;
 }
 
+.sub1--option-2{
+    width: 27%;
+    height: 86vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -42rem;
+    left: 33rem;
+    z-index: 3;
+}
+.sub1--option-3{
+    width: 35%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
