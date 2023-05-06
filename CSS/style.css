@@ -461,3 +461,108 @@ nav > ul{
 .sub1--option-2 > button{
     margin: 2rem 6.6rem;
 }
+/* page-7 */
+.page-last{
+    height: 120vh;
+    background-color: #000;
+    font-family: 'Russo One', sans-serif;
+}
+.page-last > p:nth-child(1){
+    font-size: 5rem;
+    color: #fff;
+    margin: 0rem 42.5rem;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    width: 70%;
+    background-color: transparent;
+    margin: 5rem auto;
+    font-family: 'roboto', sans-serif;
+
+}
+:where(.faq-box-1,.faq-box-2,.faq-box-3){
+    display: flex;
+    height: 25%;
+    background-color: #ffffff;
+}
+:where(.faq-box-1,.faq-box-2,.faq-box-3) > p:nth-child(1){
+    display: flex;
+    height: 100%;
+    width: 4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #277CDE;
+
+}
+:where(.box-1,.box-2,.box-3) > img{
+    width: 32px;
+    height: 30px;
+    margin-top: 0.3em;
+    margin-right: 0.5em;
+    background-color: transparent;
+}
+:where(.box-1,.box-2,.box-3){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 25%;
+    width: 100%;
+    margin: 0em 0em 0em 2em;
+    justify-content: space-between;
+
+
+}
+.logo-link{
+    height: 25vh;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    margin: 11rem auto 10rem auto;
+}
+.logo-link > img{
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.useful-links{
+    float: right;
+    height: 15rem;
+    margin: 0em 7em 0em 0em;
+    color: #ffffff;
+}
+.useful-links p {
+    margin: 2em 0em;
+    font-family: 'Russo one', sans-serif;
+    font-size: 0.6rem;
+
+}
+.useful-links >p:nth-child(1):after {
+    content: '';
+    display: block;
+    width: 80%;
+    margin-top: 1.8em;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #0ac4e9,#3b3b3b);
+}
+.nav-link{
+    height: 4rem;
+    width: 100%;
+    background-color: #277CDE;
+}
+.accounts{
+    height: 2.5rem;
+    background-color: #dcdada;
+    width: 7.5%;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 0.7rem 0rem 0rem 1rem;
+    padding: 0.3rem 0rem 0rem 0.3em;
+}
+a > img{
+  width: 30px;
+  height: auto;
+}
