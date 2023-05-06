@@ -371,63 +371,93 @@ nav > ul{
 .pricing{
     height: 40rem;
     display: flex;
-    justify-content: space-between;
-    margin-right: 13rem;
-    margin-left: 11rem;
-
+    justify-content: space-around; 
+    
 }
 .sub1--option-1{
-    width: 35%;
+    width: 26%;
     height: 80vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
+    filter: brightness(70%);
+    
 }
+.sub1--option-2{
+    width: 28%;
+    height: 90vh;
+    position: relative;
+    top: -43rem;
+    left: 33.5rem;
+    z-index: 3;
+    background-color: #fff;
+}
+.sub1--option-3{
+    width: 26%;
+    height: 80vh;
+    background-color: #fff;
+    filter: brightness(70%);
+
+}
+.sub1--option-2 > img{
+    height: 18%;
+    width: 32%;
+    margin: 2rem 10rem 0rem 9rem;
+
+}
+.sub1--option-1 > img{
+    height: 23%;
+    width: 28%;
+    transform: rotate(212deg);
+    margin: 0rem 0rem 0rem 8rem;
+}
+.sub1--option-3 > img{
+    height: 16%;
+    width: 25%;
+    margin: 1rem 10rem 1.5rem 9rem;
+}
+
 /* it selects all the images under this classes */
 :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > h1{
     text-align: center;
-    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
     padding: 3rem 0rem 1rem 0rem;
 }
-:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > img{
-    height: 25%;
-    width: 60%;
-    margin: 0rem 4rem;
-    background-color: #fff;
-}
+
 :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > p{
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
-    margin: 0rem auto 0rem auto;
+    word-spacing: 0.1rem;
+    margin: 1rem 3rem 0rem 0rem;
 }
+
 :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul{
-    font-size: 1.5rem;
-    margin: -2.5rem 5rem 0rem 5rem;
+    font-size: 1.35rem;
+    margin: -0.5rem -3rem 0rem 4rem;
     padding: 1rem 0rem;
+    font-family: 'roboto', sans-serif;
+
 }
+
 :where(.sub1--option-1 > ul,.sub1--option-2 > ul,.sub1--option-3 > ul) > li{
     list-style-image: url(../IMAGE/check-circle-32.png);
     margin: 1rem 0rem 0rem 0rem;
 }
-:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > span{
-    font-weight: bold;
-}
-:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button{
-    padding: 1rem;
-    width: 35%;
-    margin: 0rem 7rem;
-    font-size: 1rem;
+:where(.sub1--option-1 > p,.sub1--option-2 > p,.sub1--option-3 >p) > span{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5rem;
 }
 
-.sub1--option-2{
-    width: 27%;
-    height: 86vh;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    top: -42rem;
-    left: 33rem;
-    z-index: 3;
+:where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button{
+    padding: 1rem 0rem;
+    width: 45%;
+    font-size: 1.25rem;
+    background-color: #277CDE;
+    font-family: 'Russo One', sans-serif;
+
 }
-.sub1--option-3{
-    width: 35%;
-    height: 80vh;
-    background-color: rgb(255, 255, 255);
+:where(.sub1--option-1,.sub1--option-3) > button{
+    margin: 1rem 6rem;
+
+}
+.sub1--option-2 > button{
+    margin: 2rem 6.6rem;
 }
