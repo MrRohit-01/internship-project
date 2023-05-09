@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     scroll-snap-align: start;
 }
+
 .logo{
     position: absolute;
     left: 2.5rem;
@@ -34,6 +35,7 @@ nav > ul{
     height: 100vh;
     overflow: hidden;
     z-index: -1;
+    overflow-x: hidden;
 
 }
 .main{
