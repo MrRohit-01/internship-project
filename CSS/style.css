@@ -57,40 +57,54 @@
 
 nav > ul{
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     list-style: none;
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
     gap: 1.8rem;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     height: 5.5rem;
-    transition: all .4s ease-in-out;
-
-    
+    white-space: nowrap;
 }
-@media only screen and (max-width : 584px) {
-    nav > ul {
-        display: flex;
-        flex-direction: column;
-        height: 0rem;
-        gap: 1.5rem;
-        overflow: hidden;
-        border: 1px #fff;
-        position: absolute;
-        width: 100%;
-        z-index: 3;
-    }
+@media screen and (max-width:830px) {
+    
     .logo{
-        height: 64px;
-        left: 0.5rem;
+        height: 63px;
+        left: 0.45rem;
         top: 0.5rem;
         z-index: 4;
     }
-  
+}
+
+@media only screen and (max-width : 730px) {
+    ul >li{
+        background-color: rgba(0,0,0,0.4);
+        height: 2.5rem;
+        width: 70%;
+        text-align: center;
+        padding-top: 0.6rem;
+        border-radius: 20px;
+    }
+    nav > ul {
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 0rem;
+        gap: .6rem;
+        background-color: rgb(32 42 44 / 60%);
+        border: 1px #fff;
+        transition: all .4s ease-in-out;
+        position: absolute;
+        top: -50%;
+        width: 100vw;
+        z-index: 3;
+    }
+
     input[type=checkbox]:checked ~ ul{
         height: 18rem;
+        top: 0;
     }
     input[type=checkbox]:checked + .menu-bar{
             background-color: transparent;
@@ -106,7 +120,7 @@ nav > ul{
         transform: rotate(-50deg);
     }
 }
-@media screen and (min-width : 585px) {
+@media screen and (min-width :730px) {
    input[type=checkbox]{
     display: none;
    }
@@ -135,7 +149,6 @@ nav > ul{
     padding: 0rem 0.5rem;
     height: 30rem;
     
-
 }
 .bits{
     background-color: white;
@@ -198,7 +211,6 @@ nav > ul{
     font-size: 1.2rem;
     font-family: 'Saira', sans-serif;
     font-weight: 100;
-    white-space: nowrap;
 }
 
 #below-line > span{
@@ -206,31 +218,43 @@ nav > ul{
     font-weight: 100;
     font-family: 'Open Sans', sans-serif;
 }
-@media screen and (max-width : 414px){
-    .main-content{
-        padding: 61px 0px 10px 0px;
+@media screen and (max-width : 414px) {
+   
+    .bits{
+        background-color: white;
+        height: 0.2rem;
+        margin:0.3rem 0rem 1.67rem 0.3rem;
+    }
+    #below-line{
+        font-size: 1.1rem;
+        font-family: 'Saira', sans-serif;
+        font-weight: 100;
+    }
+    
+    #below-line > span{
+        font-size: 1rem;
+        font-weight: 100;
+        font-family: 'Open Sans', sans-serif;
+    } 
+}
+    @media screen and (max-width : 570px){
+        .main{
+        padding: 15rem 0rem;
+    }
+    .main-content {
+        padding: 2rem 0.5rem;
     }
     #headline{
         font-family: 'Salsa', cursive;
-        font-size: 2rem;
-        background-color: red;
+        font-size: 3.5rem;
         font-weight: 100;
     }
     #below-line{
-        font-size: 0.9rem;
-        white-space:break-spaces;
-    }
-}
-@media screen and (max-width : 584px){
-    .main-content{
-        padding: 61px 0px 10px 0px;
-    }
-    #headline{
-        font-family: 'Salsa', cursive;
-        font-size: 4rem;
-        background-color: red;
+        font-size: 1.5rem;
+        font-family: 'Saira', sans-serif;
         font-weight: 100;
     }
+
 }
 /* page-2 */
 .page-2{
@@ -240,6 +264,7 @@ nav > ul{
 }
 .content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 6rem;
     height: inherit;
@@ -269,6 +294,43 @@ nav > ul{
     font-weight: 100;
     line-height: 2rem;
 }
+.map{
+    width: 35vw;
+    height: 65vh;
+}
+.map iframe{
+    border-radius: 20px;
+}
+@media screen and (max-width:900px){
+    .content{
+        display: block;
+    }
+    .text-content{
+        margin: 0 auto;
+        width: 89vw;
+        height: auto;
+        padding: 4.5rem 0 0 0;
+
+    }
+    .map{
+        margin: 3rem auto 0 auto;
+        width: 63vw;
+        height: 53vh;
+    }
+}
+@media screen and (max-width:500px){
+    .text-content >h1{
+        font-size: 2rem;
+    }
+    .text-content >h3{
+        font-size: 1.2rem;
+    }
+    .map{
+        margin: 3rem auto 0 auto;
+        width: 80%;
+        height: 40%;
+    }
+    }
 /* page-3 */
 .page-3{
     height: 120vh;
@@ -289,7 +351,7 @@ nav > ul{
     opacity: 15%;
     word-spacing: 0.2rem;
 }
-.heading > p:nth-last-child(1){
+.heading > p:nth-child(2){
     position: relative;
     top: -4rem;
     left: 0rem;
@@ -322,16 +384,113 @@ nav > ul{
 }
 .group-pic{
     width: 39rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .text-3{
     height: 29rem;
     width: 34rem;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 10rem;
     font-size: 1.9rem;
+    padding-top: 8rem;
     padding-left: 5.3rem;
+}
+@media screen and (max-width:1200px) {
+    .page-3 > p{
+        padding-left: 0rem;
+    }
+    .group-pic{
+        width: 31rem;
+        padding-left: 1rem;
+        object-fit: contain;
+    }
+     .text-3{
+        font-size: 1.6rem;
+        padding: 8rem 0.1rem 0 2.3rem;
+        }
+}
+@media screen and (max-width: 810px){
+    .group-pic{
+        width: 28rem;
+        object-fit: contain;
+        border-radius: 40px;
+    }
+    
+    .content-3{
+        flex-direction: column;
+    }
+    .page-3 > p{
+        font-size: 12rem;
+        position: relative;
+        top: -7rem;
+        padding-left: 2rem;
+    }
+    .heading > P:nth-child(1){
+        font-size:  4.8rem ;
+        letter-spacing: 0;
+        white-space:nowrap;
+    }
+    .text-3{
+        height: 14rem;
+        width: 30rem;
+        padding: 3rem 0 0 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .heading > p:nth-child(1){
+    font-size: 3.5rem;
+    }
+    .heading > p:nth-child(2){
+    position: relative;
+    top: -2rem;
+    left: 0rem;
+    font-size: 1.7rem;
+    }
+    .group-pic{
+        width: 90%;
+        object-fit: contain;
+        
+    }
+    .text-3{
+        height: 18.5rem;
+        width: 80%;
+        font-size: 1.4rem;
+        padding: 3rem 0 0 0;
+    }
+    
+}
+@media screen and (max-width: 375px) {
+    .heading > p:nth-child(1){
+        font-size: 2.8rem;
+        overflow-x: hidden;
+    }
+    .heading > p:nth-child(2){
+        position: relative;
+        top: -2rem;
+        left: 0rem;
+        font-size: .8rem;
+        overflow-x: hidden;
+    }
+    .group-pic{
+        width: 90%;
+        object-fit: contain;
+    }
+    .text-3{
+        height: 18.5rem;
+        width: 80%;
+        font-size: 1.4rem;
+        padding: 3rem 0 0 0;
+    }
+    .page-3 > p{
+        font-size: 7rem;
+        position: relative;
+        top: -7rem;
+        -webkit-text-stroke: 0px rgb(0, 0, 0);
+        color: white;
+        padding-left: 0rem;
+
+}
+
 }
 /* page-4 */
 .page-4{
