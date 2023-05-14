@@ -13,7 +13,46 @@
     position: absolute;
     left: 2.5rem;
     height: 5.5rem;
-
+    
+}
+#checkbox{
+    color: #000;
+    float: right;
+    height: 0px;
+    display:none;
+    
+}
+.menu-bar {
+    height: 0.17rem;
+    width: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    z-index: 9;
+    transition: 0.4s ease-in-out;
+}
+.menu-bar::before{
+    content: "";
+    height: 0.17rem;
+    width: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: -0.6rem;
+    right: 0rem;
+    z-index: 9;
+    transition: all .4s ease-in-out;
+}
+.menu-bar::after{
+    content: "";
+    height: 0.17rem;
+    width: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    right: 0rem;
+    z-index: 9;
+    transition: all .4s ease-in-out;
 }
 
 nav > ul{
@@ -27,6 +66,53 @@ nav > ul{
     background-color: #000;
     color: #fff;
     height: 5.5rem;
+    transition: all .4s ease-in-out;
+
+    
+}
+@media only screen and (max-width : 584px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        height: 0rem;
+        gap: 1.5rem;
+        overflow: hidden;
+        border: 1px #fff;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+    .logo{
+        height: 64px;
+        left: 0.5rem;
+        top: 0.5rem;
+        z-index: 4;
+    }
+  
+    input[type=checkbox]:checked ~ ul{
+        height: 18rem;
+    }
+    input[type=checkbox]:checked + .menu-bar{
+            background-color: transparent;
+    }
+    input[type=checkbox]:checked + .menu-bar::before{
+        top: 3px;
+        width: 22px;
+        transform: rotate(50deg);
+    }
+    input[type=checkbox]:checked + .menu-bar::after{
+        bottom: 3px;
+        width: 22px;
+        transform: rotate(-50deg);
+    }
+}
+@media screen and (min-width : 585px) {
+   input[type=checkbox]{
+    display: none;
+   }
+    .menu-bar{
+    display: none;
+   }
 }
 .background-image1{
     background-image: url(../IMAGE/Picture1.jpg);
@@ -112,12 +198,39 @@ nav > ul{
     font-size: 1.2rem;
     font-family: 'Saira', sans-serif;
     font-weight: 100;
+    white-space: nowrap;
 }
 
 #below-line > span{
     font-size: 1.8rem;
     font-weight: 100;
     font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width : 414px){
+    .main-content{
+        padding: 61px 0px 10px 0px;
+    }
+    #headline{
+        font-family: 'Salsa', cursive;
+        font-size: 2rem;
+        background-color: red;
+        font-weight: 100;
+    }
+    #below-line{
+        font-size: 0.9rem;
+        white-space:break-spaces;
+    }
+}
+@media screen and (max-width : 584px){
+    .main-content{
+        padding: 61px 0px 10px 0px;
+    }
+    #headline{
+        font-family: 'Salsa', cursive;
+        font-size: 4rem;
+        background-color: red;
+        font-weight: 100;
+    }
 }
 /* page-2 */
 .page-2{
