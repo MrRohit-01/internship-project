@@ -613,25 +613,27 @@ nav > ul{
 .page-5{
     height: 100vh;
     background-color: #000;
-    background-image: url(../IMAGE/dance-3.jpg);
+    background-image: url(../IMAGE/dancing-girl.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:100%;
+    overflow: hidden;
     
 }
 .page-5 > p {
     font-size: 17rem;
-    float: left;
-    margin: 0rem 0rem 0rem 8rem;
-    letter-spacing: 0.1rem;
+    margin-top: 0rem;
+    margin-bottom: -5rem;
+    margin-left: 7.8rem;
+    margin: 0 0 -5rem 7.8rem;
     font-family: 'Saira', sans-serif;
     color: transparent;
     -webkit-text-stroke: 7px white;
 }
 .heading-5{
     color: #fff;
-    padding: 3rem;
+    padding: 2rem;
     font-family: 'secular one', sans-serif;
     text-align: start;
     padding-left: 1rem;
@@ -659,26 +661,35 @@ nav > ul{
 }
 .icon{
     display: flex;
-    align-items: flex-end;
-    height: 80%;
-    margin-bottom: 9rem;
+    align-items: end;
+    height: 25.82rem;
+    margin-bottom: 0rem;
+}
+.center-profile{
+    display: flex;
+    gap: 13rem;
+    justify-content: center;
 }
 .profile{
     width: 13rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     color: #fff;
+    white-space: nowrap;
+    padding-top: 1.7rem;
     
 }
-.p-11{
-    margin-left: -0.9rem;
-}
-.p-2{
-    margin-left: 15rem;
-}
+
 .name{
-    width: 16rem;
+    padding-bottom: 0.5rem;
 }
+ .pn-1{ 
+     margin-left: -1rem;
+}    
+ .pn-2{ 
+     margin-left: 1rem;
+}    
+    
 /* page-6 */
 .page-6{
     background-color: #000;
