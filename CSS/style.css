@@ -385,6 +385,7 @@ nav > ul{
 .group-pic{
     width: 39rem;
     object-fit: contain;
+    border-radius: 40px;
 }
 .text-3{
     height: 29rem;
@@ -468,7 +469,6 @@ nav > ul{
         position: relative;
         top: -2rem;
         left: 0rem;
-        font-size: .8rem;
         overflow-x: hidden;
     }
     .group-pic{
@@ -494,7 +494,7 @@ nav > ul{
 }
 /* page-4 */
 .page-4{
-    height: 120vh;
+    height: 125vh;
     background-color: #000;
 }
 .head-4{
@@ -520,23 +520,91 @@ nav > ul{
     font-family: 'Saira', sans-serif;
     color: transparent;
     -webkit-text-stroke: 7px white;
-    margin: -7rem 8rem 0rem 64rem;
-    clear: left;
+    margin: -8rem 8rem -8rem 0rem;
+    float: right;
+    clear: both;
 }
 .content-4{
     display: flex;
-    margin-top: -4rem;
+    margin-top: 16rem;
 }
 .jumba{
-    width:44rem;
-    margin-left: 11rem;
+    width: 60vw;
+    object-fit: contain;
+    max-width: 44rem;
+    margin-left: 8vw;
+    border-radius : 30px;
 }
-.text > p{
+.text {
     color: #fff;
     font-family: 'Russo One', sans-serif;
     text-align: start;
-    padding: 7rem 3rem 0rem 5rem;
+    padding: 7rem 5rem 0rem 5rem;
     font-size: 1.6rem;
+}
+@media screen and (max-width : 1200px){
+.jumba{
+    max-width:60%;
+    margin-left: 8vw;
+    border-radius: 30px;
+    margin: 0 auto;
+
+    }
+    .page-4> .numbers{
+    margin-right: 1rem;
+    }
+    .text{
+        padding: 2rem 0 0 1rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+
+    }
+}
+@media screen and (max-width : 810px){
+    .head{
+        overflow-x: hidden;
+    }
+    .head-4 > h1{
+    font-size: 5rem;
+    overflow: hidden;
+ }
+ .page-4 > .numbers{
+    font-size: 11rem;
+    margin: -4rem 0 0 0;
+ }
+ .content-4{
+    display: block;
+    margin-top: 15rem;
+    overflow: hidden;
+    text-align: center;
+
+}
+.jumba{
+    max-width: 90% !important;
+    width: 30rem !important;
+   
+
+}
+@media screen and (max-width: 375px) {
+    .head-4 > p{
+        font-size: 2.8rem;
+
+    }
+    .page-4 > .numbers{
+        margin: 3rem 0 0 0;
+        font-size: 7rem;
+        position: relative;
+        top: -7rem;
+        -webkit-text-stroke: 0px rgb(0, 0, 0);
+        color: white;
+        padding-left: 0rem;
+    }
+    .text{
+        font-size: 1rem;
+        padding: 5rem 0 0 1rem;
+    }
+
+}
 }
 /* page-5 */
 .page-5{
