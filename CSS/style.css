@@ -480,6 +480,7 @@ nav > ul{
         width: 80%;
         font-size: 1.4rem;
         padding: 3rem 0 0 0;
+
     }
     .page-3 > p{
         font-size: 7rem;
@@ -536,10 +537,10 @@ nav > ul{
     border-radius : 30px;
 }
 .text {
-    color: #fff;
-    font-family: 'Russo One', sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: "Russo One", sans-serif;
     text-align: start;
-    padding: 7rem 5rem 0rem 5rem;
+    padding: 7rem 8rem 0rem 5rem;
     font-size: 1.6rem;
 }
 @media screen and (max-width : 1200px){
@@ -554,6 +555,7 @@ nav > ul{
     margin-right: 1rem;
     }
     .text{
+
         padding: 2rem 0 0 1rem;
         font-size: 1.4rem;
         font-weight: 100;
@@ -601,7 +603,8 @@ nav > ul{
     }
     .text{
         font-size: 1rem;
-        padding: 5rem 0 0 1rem;
+        padding: 5rem 2rem 0 2rem;
+        line-height: 1.8rem;
     }
 
 }
