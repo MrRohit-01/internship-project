@@ -80,7 +80,7 @@ nav > ul{
 }
 
 @media only screen and (max-width : 730px) {
-    ul >li{
+     nav > ul >li{
         background-color: rgba(0,0,0,0.4);
         height: 2.5rem;
         width: 70%;
@@ -619,25 +619,26 @@ nav > ul{
     background-size: cover;
     width:100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     
+}
+.content-p-5{
+    height: 100%;
 }
 .page-5 > p {
     font-size: 17rem;
-    margin-top: 0rem;
-    margin-bottom: -5rem;
-    margin-left: 7.8rem;
-    margin: 0 0 -5rem 7.8rem;
     font-family: 'Saira', sans-serif;
     color: transparent;
+    float: right;
     -webkit-text-stroke: 7px white;
 }
 .heading-5{
     color: #fff;
-    padding: 2rem;
     font-family: 'secular one', sans-serif;
     text-align: start;
-    padding-left: 1rem;
     float: right;
+    background-color: transparent;
 }
 .heading-5 > p:nth-child(1){
     font-size: 7.7rem;
@@ -689,18 +690,139 @@ nav > ul{
  .pn-2{ 
      margin-left: 1rem;
 }    
+@media screen and (max-width : 1309px) {
+    .center-profile{
+       width: 100%;
+    }
+    .heading-5 > p:nth-child(1){
+        margin-left: -2rem;
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width : 1100px) {
+    .page-5 > p {
+    font-size: 16rem;
+    margin-right: 6rem;
+}
+    .heading-5 {
+        margin-left: -8rem;
+    }
+    .heading-5 > p:nth-child(1){
+        font-size: 6rem;
+    }
+    .heading-5 > p:nth-child(2) {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-top: -3.6rem;
+        margin-left: 2rem;
+    }
+    .heading-5 > p:nth-child(3){
+        font-size: 1.1rem;
+    margin-left: 17rem;
+    }
+    .icon {
+        height: 21rem;
+    }
+    .profile{
+        width: 11rem;
+        font-size: 1rem;
+    }
+    .pn-1{
+        margin-left: 0.6rem;
+    }
+    .pn-2{ 
+        margin-left: 0.9rem;
+   }   
+}
+@media screen and (max-width: 1019px) {
+    .page-5 > p {
+        font-size: 9rem;
+        padding-top: 4rem;
+        margin-right: 9rem;
+    }
+    .heading-5 {
+        margin-left: -19rem;
+    }
+    .icon{
+    margin-top: 3rem;
+    align-items: start;
+
+    }
+}
+@media screen and (max-width : 715px) {
+    .page-5{
+        justify-content: start;
+    }
+}
+@media screen and (max-width:624px) {
+    .heading-5 > p:nth-child(1) {
+        font-size: 14vh;
+        text-align: center;
+    }
+    .heading-5 > p:nth-child(2) {
+        font-size: 2.6rem;
+        text-align: center;
+
+    }
+    .center-profile{
+        gap:3rem;
+    }
+}
+@media screen and (max-width : 595px) {
+    .center-profile {
+        gap: 0rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .heading-5 > p:nth-child(3) {
+        margin-left: 10rem;
+    }
+    .heading-5 > p:nth-child(2){
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+    .heading-5 > p:nth-child(1) {
+        font-size: 14vw;
+        text-align: center;
+    }
+    .profile {
+        width: 19vh;
+        font-size: 1.7vh;
+    }
+}
+@media screen and (max-width:360px){
+    .heading-5 > p:nth-child(2){
+        text-align: start;
+    }
+    .heading-5 > p:nth-child(3){
+        font-size: 0.9rem;
+        margin-left: 0rem !important;
+    }
+}
+@media screen and (max-width:321) {
+    .heading-5 > p:nth-child(1){
+        font-size: 10vw;
+    text-align: center;
+    padding-left: 2rem;
+    }
     
-/* page-6 */
+}
+    /* page-6 */
 .page-6{
     background-color: #000;
     height: 160vh;
     font-family: 'Saira', sans-serif;
+    overflow: hidden;
 }
 .page-6> p{
     font-size: 17rem;
     color: transparent;
     -webkit-text-stroke: 7px white;
-    margin: -3rem 8rem -7rem 64rem;
+    margin: -1rem 8rem -7rem 0rem;
+    float: right;
     clear: left;
     z-index: 5;
 }
@@ -725,47 +847,60 @@ nav > ul{
     height: 17rem;
 }
 .pricing{
-    height: 40rem;
+    width: 100vw;
     display: flex;
-    justify-content: space-around; 
+    justify-content: center;
+    scroll-behavior: smooth;
+    scroll-snap-type:mandatory;
     
 }
 .sub1--option-1{
     width: 26%;
-    height: 80vh;
     background-color: #fff;
     filter: brightness(70%);
+    border-radius: 10px;
+    min-width: 22rem;
+    overflow: hidden;
     
 }
 .sub1--option-2{
-    width: 28%;
-    height: 90vh;
-    position: relative;
-    top: -43rem;
-    left: 33.5rem;
-    z-index: 3;
+    width: 26%;
     background-color: #fff;
+    filter : brightness(100%);
+    transform: scale(1.03);
+    border-radius: 10px;
+    min-width: 22rem;
+    z-index: 2;
+    overflow: hidden;
+    
 }
 .sub1--option-3{
     width: 26%;
-    height: 80vh;
     background-color: #fff;
     filter: brightness(70%);
-
+    min-width: 22rem;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
 }
-.sub1--option-2 > img{
+.sub1--option-1:hover{
+    transform: scale(1.03);
+}
+.img-6-2 > img{
     height: 18%;
     width: 32%;
     margin: 2rem 10rem 0rem 9rem;
 
 }
-.sub1--option-1 > img{
+.img-6 > img{
     height: 23%;
     width: 28%;
     transform: rotate(212deg);
     margin: 0rem 0rem 0rem 8rem;
+    mix-blend-mode: multiply;
 }
-.sub1--option-3 > img{
+.img-6-3 > img{
     height: 16%;
     width: 25%;
     margin: 1rem 10rem 1.5rem 9rem;
@@ -790,7 +925,7 @@ nav > ul{
     margin: -0.5rem -3rem 0rem 4rem;
     padding: 1rem 0rem;
     font-family: 'roboto', sans-serif;
-
+    
 }
 
 :where(.sub1--option-1 > ul,.sub1--option-2 > ul,.sub1--option-3 > ul) > li{
@@ -799,34 +934,152 @@ nav > ul{
 }
 :where(.sub1--option-1 > p,.sub1--option-2 > p,.sub1--option-3 >p) > span{
     font-family: 'Russo One', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button{
     padding: 1rem 0rem;
     width: 45%;
+    margin:1rem 6rem;
     font-size: 1.25rem;
     background-color: #277CDE;
     font-family: 'Russo One', sans-serif;
 
 }
-:where(.sub1--option-1,.sub1--option-3) > button{
-    margin: 1rem 6rem;
-
+.sub1--option-1 > button {
+        margin: 2rem 6rem;
 }
-.sub1--option-2 > button{
-    margin: 2rem 6.6rem;
+    @media screen and (min-width : 1038px) {
+        .sub1--option-1:hover{
+        filter: brightness(100%);
+        transform: scale(1.03);
+        z-index: 3;
+    }
+    .sub1--option-1:hover ~ .sub1--option-2{
+        filter: brightness(70%);
+        transform: scale(1);
+    }
+    .sub1--option-3:hover{
+        filter: brightness(100%);
+        transform: scale(1.03);
+        z-index: 3;
+    }
+    .sub1--option-3:hover .sub1--option-2{
+        filter: brightness(70%);
+        transform: scale(1);
+    }
+    
+}
+    
+@media screen and (max-width: 1037px){
+    .page-6{
+        height: 335vh;
+    }
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .pricing > .sub{
+        width: 56%;
+        max-width: 37rem;
+        height: 36rem;
+        min-width: 21rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul{
+        margin: -1.5rem -3rem 0rem 8rem;
+        
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > p{
+        margin: 0rem 3rem 0rem 0rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button {
+        padding: 1rem 2rem;
+        width: 45%;
+        margin: 0px 7rem;
+
+    }
+    .img-6 {
+        margin: 0;
+        width: 29rem;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .img-6 > img {
+        margin: 0;
+    }
+    .head-6 > h1{
+        font-size: 5rem;
+        font-weight: 100;
+        letter-spacing: 0.5rem;
+        opacity: 20%;
+    }
+    .head-6 > p{
+        position: relative;
+        top: -5rem;
+        font-size: 3rem;
+        height: 17rem;
+    }
+    .sub1--option-2 > img {
+        height: 18%;
+        width: 32%;
+        margin: 0rem 10rem 0rem 9rem;
+    }
+    .img-6{
+        margin: 0;
+    }
+    .img-6-2{
+    display: inline-block;
+    text-align: center;
+    width: 97%;
+    }
+    .img-6-2 > img {
+        height: 18%;
+        width: 32%;
+        margin: 0;
+    }
+    .img-6-3 > img {
+       margin: 0;
+    }.img-6-3 {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width : 700px) {
+    .head-6 > h1 {
+        font-size: 12vw;
+        font-weight: 100;
+        letter-spacing: 0.5rem;
+        opacity: 20%;
+    }
+    .head-6 > p {
+        position: relative;
+        top: -2rem;
+        font-size: 7vw;
+        height: 17rem;
+    }
+    .page-6> p {
+        font-size: 11rem;
+        margin: 0;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul {
+        margin: -1.5rem -3rem 0rem 3rem;
+    }
 }
 /* page-7 */
 .page-last{
-    height: 120vh;
+    height: 122vh;
     background-color: #000;
     font-family: 'Russo One', sans-serif;
+    overflow: hidden;
 }
-.page-last > p:nth-child(1){
+.faq{
     font-size: 5rem;
     color: #fff;
-    margin: 0rem 42.5rem;
+    text-align: center;
+
 }
 
 .faq-container{
@@ -909,16 +1162,53 @@ nav > ul{
     width: 100%;
     background-color: #277CDE;
 }
-.accounts{
-    height: 2.5rem;
+.accounts {
+    height: auto;
     background-color: #dcdada;
-    width: 7.5%;
+    width: 8vw;
     display: inline-block;
     border-radius: 30px;
     margin: 0.7rem 0rem 0rem 1rem;
     padding: 0.3rem 0rem 0rem 0.3em;
 }
-a > img{
-  width: 30px;
+ a > img{
+  width: 2vw;
   height: auto;
+} 
+@media screen and (max-width :728px) {
+    .logo-link > img {
+        height: 9rem;
+        background-color: #fff;
+        border-radius: 100%;
+    }
+    .logo-link {
+        width: 100%;
+    }
+    .useful-links {
+        margin: 0em 1em 0em 0em;
+
+    }
+    a > img {
+        width: 1rem;
+        height: auto;
+    }
+    .accounts {
+        width: 4.2rem;
+    }
+    :where(.box-1,.box-2,.box-3) {
+        margin: 0em 0em 0em 1em;
+    }
+    :where(.box-1,.box-2,.box-3) > p{
+        font-size: 1rem;
+    }
+    :where(.faq-box-1,.faq-box-2,.faq-box-3) {
+        min-width: 19rem;
+
+    }
+}
+@media screen and (max-width : 362px) {
+
+.faq-container {
+ margin: 0;
+} 
 }
