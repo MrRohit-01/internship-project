@@ -218,8 +218,27 @@ nav > ul{
     font-weight: 100;
     font-family: 'Open Sans', sans-serif;
 }
+@media screen and (max-width : 570px){
+    .main{
+    padding: 15rem 0rem;
+}
+.main-content {
+    padding: 2rem 0.5rem;
+}
+#headline{
+    font-family: 'Salsa', cursive;
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+#below-line{
+    font-size: 1.5rem;
+    font-family: 'Saira', sans-serif;
+    font-weight: 100;
+}
+
+}
 @media screen and (max-width : 414px) {
-   
+    
     .bits{
         background-color: white;
         height: 0.2rem;
@@ -236,25 +255,9 @@ nav > ul{
         font-weight: 100;
         font-family: 'Open Sans', sans-serif;
     } 
-}
-    @media screen and (max-width : 570px){
-        .main{
-        padding: 15rem 0rem;
+    .line{
+        display: none;
     }
-    .main-content {
-        padding: 2rem 0.5rem;
-    }
-    #headline{
-        font-family: 'Salsa', cursive;
-        font-size: 3.5rem;
-        font-weight: 100;
-    }
-    #below-line{
-        font-size: 1.5rem;
-        font-family: 'Saira', sans-serif;
-        font-weight: 100;
-    }
-
 }
 /* page-2 */
 .page-2{
@@ -319,6 +322,9 @@ nav > ul{
     }
 }
 @media screen and (max-width:500px){
+    .page-2{
+        height: 105vh;
+    }
     .text-content >h1{
         font-size: 2rem;
     }
@@ -328,7 +334,7 @@ nav > ul{
     .map{
         margin: 3rem auto 0 auto;
         width: 80%;
-        height: 40%;
+        height: 28%;
     }
     }
 /* page-3 */
@@ -415,6 +421,7 @@ nav > ul{
         width: 28rem;
         object-fit: contain;
         border-radius: 40px;
+        padding: 0;
     }
     
     .content-3{
@@ -461,10 +468,11 @@ nav > ul{
     
 }
 @media screen and (max-width: 375px) {
-    .heading > p:nth-child(1){
-        font-size: 2.8rem;
+    .heading > p:nth-child(1) {
+        font-size: 13.2vw;
         overflow-x: hidden;
     }
+        
     .heading > p:nth-child(2){
         position: relative;
         top: -2rem;
@@ -980,76 +988,6 @@ nav > ul{
     
 }
     
-/* @media screen and (max-width: 1037px){ */
-   
-    /* .pricing > .sub{
-        width: 56%;
-        max-width: 18rem;
-        height: 36rem;
-
-            min-width: 21rem;
-    }
-    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul{
-        margin: -1.5rem -3rem 0rem 8rem;
-        
-    }
-    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > p{
-        margin: 0rem 3rem 0rem 0rem;
-    }
-    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button {
-        padding: 1rem 2rem;
-        width: 45%;
-        margin: 0px 7rem;
-
-    }
-    .img-6 {
-        margin: 0;
-        width: 29rem;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-    .img-6 > img {
-        margin: 0;
-    }
-    .head-6 > h1{
-        font-size: 5rem;
-        font-weight: 100;
-        letter-spacing: 0.5rem;
-        opacity: 20%;
-    }
-    .head-6 > p{
-        position: relative;
-        top: -5rem;
-        font-size: 3rem;
-        height: 17rem;
-    }
-    .sub1--option-2 > img {
-        height: 18%;
-        width: 32%;
-        margin: 0rem 10rem 0rem 9rem;
-    }
-    .img-6{
-        margin: 0;
-    }
-    .img-6-2{
-    display: inline-block;
-    text-align: center;
-    width: 97%;
-    }
-    .img-6-2 > img {
-        height: 18%;
-        width: 32%;
-        margin: 0;
-    }
-    .img-6-3 > img {
-       margin: 0;
-    }.img-6-3 {
-        width: 100%;
-        text-align: center;
-    }
-    
-} */
 @media screen and (max-width : 1037px) {
     .img-6-2 > img {
         height: 18%;
@@ -1062,7 +1000,7 @@ nav > ul{
         margin: -1rem 10rem 1.5rem 8rem;
     }
     .page-6{
-        height: 235vh;
+         height: 306vh;
     }
     .pricing > .sub{
         width: 56%;
@@ -1076,9 +1014,7 @@ nav > ul{
         align-items: center;
         gap: 1rem;
     }
-    /* .pricing > .sub {
-        height: 27rem;
-    } */
+
     :where(.sub1--option-1 > ul,.sub1--option-2 > ul,.sub1--option-3 > ul) > li {
         margin: 0.5rem 0rem 0rem 0rem;
     }
@@ -1107,7 +1043,6 @@ nav > ul{
     }
     .head-6 > p {
         position: relative;
-        top: -2rem;
         font-size: 7vw;
         height: 17rem;
     }
@@ -1120,11 +1055,14 @@ nav > ul{
     }
 }
 @media screen and (max-width: 530px) {
+    .page-6 {
+        height: 226vh;
+    }
     .img-6-2{
       text-align: center;
     }
     .head-6 > h1 {
-        font-size: 10vw;
+        font-size: 12vw;
         letter-spacing: 0;
     }
     .pricing > .sub {
@@ -1172,12 +1110,13 @@ nav > ul{
         margin: 0rem 10rem 0.5rem 8rem;
     }
 }
+
 /* page-7 */
 .page-last{
-    height: 122vh;
+    height: auto;
     background-color: #000;
     font-family: 'Russo One', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .faq{
     font-size: 5rem;
@@ -1190,10 +1129,10 @@ nav > ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20vh;
-    width: 70%;
-    background-color: transparent;
-    margin: 5rem auto;
+    height: 20vh;   
+    width: 70%; 
+    background-color: transparent;  
+    margin: 5rem auto;  
     font-family: 'roboto', sans-serif;
 
 }
@@ -1280,6 +1219,9 @@ nav > ul{
   height: auto;
 } 
 @media screen and (max-width :728px) {
+    .faq-container{
+        width: 95%;
+    }
     .logo-link > img {
         height: 9rem;
         background-color: #fff;
@@ -1305,14 +1247,31 @@ nav > ul{
     :where(.box-1,.box-2,.box-3) > p{
         font-size: 1rem;
     }
-    :where(.faq-box-1,.faq-box-2,.faq-box-3) {
-        min-width: 19rem;
-
-    }
 }
 @media screen and (max-width : 362px) {
+    :where(.box-1,.box-2,.box-3) > img {
+        width: 24px;
+        height: 20px;
+    }
+    :where(.faq-box-1,.faq-box-2,.faq-box-3) > p:nth-child(1) {
+        display: none;
+    }
+    .faq{
+        font-size: 24vw;
+    }
 
-.faq-container {
- margin: 0;
-} 
+    .faq-container {
+        width: 90%;
+        min-width: 11.3rem;
+    }
+    :where(.box-1,.box-2,.box-3) > p {
+        font-size: .7rem;
+    }
+    .logo-link {
+        margin: 0rem auto 3rem auto;
+    }
+    .logo-link > img {
+        height: 4rem;
+    }
+
 }
