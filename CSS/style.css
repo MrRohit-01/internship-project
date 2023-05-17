@@ -333,7 +333,7 @@ nav > ul{
     }
 /* page-3 */
 .page-3{
-    height: 120vh;
+    height: 126vh;
     background-color: #000;
     color: #fff;
 }
@@ -567,9 +567,13 @@ nav > ul{
         overflow-x: hidden;
     }
     .head-4 > h1{
-    font-size: 5rem;
+    font-size: 3.4rem;
     overflow: hidden;
+    letter-spacing: 0;
  }
+ .head-4 > p {
+    top: -3rem;
+}
  .page-4 > .numbers{
     font-size: 11rem;
     margin: -4rem 0 0 0;
@@ -589,11 +593,14 @@ nav > ul{
 }
 @media screen and (max-width: 375px) {
     .head-4 > p{
-        font-size: 2.8rem;
+        font-size: 2rem;
 
     }
+ .content-4{
+        margin: 6rem 0 0 0;
+ }
     .page-4 > .numbers{
-        margin: 3rem 0 0 0;
+        margin: 3rem 0 -19rem 0;
         font-size: 7rem;
         position: relative;
         top: -7rem;
@@ -774,7 +781,7 @@ nav > ul{
         gap: 0rem;
         flex-direction: column;
         align-items: center;
-        padding-top: 3rem;
+        padding-top: 5rem;
     }
     .heading-5 > p:nth-child(3) {
         margin-left: 10rem;
@@ -786,11 +793,13 @@ nav > ul{
     }
     .heading-5 > p:nth-child(1) {
         font-size: 14vw;
+        padding-left: 1rem;
         text-align: center;
     }
     .profile {
         width: 19vh;
         font-size: 1.7vh;
+        padding: 0.2rem;
     }
 }
 @media screen and (max-width:360px){
@@ -813,7 +822,7 @@ nav > ul{
     /* page-6 */
 .page-6{
     background-color: #000;
-    height: 160vh;
+    height: 190vh;
     font-family: 'Saira', sans-serif;
     overflow: hidden;
 }
@@ -946,7 +955,7 @@ nav > ul{
     font-family: 'Russo One', sans-serif;
 
 }
-.sub1--option-1 > button {
+ .sub1--option-1 > button {
         margin: 2rem 6rem;
 }
     @media screen and (min-width : 1038px) {
@@ -971,20 +980,14 @@ nav > ul{
     
 }
     
-@media screen and (max-width: 1037px){
-    .page-6{
-        height: 335vh;
-    }
-    .pricing{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    .pricing > .sub{
+/* @media screen and (max-width: 1037px){ */
+   
+    /* .pricing > .sub{
         width: 56%;
-        max-width: 37rem;
+        max-width: 18rem;
         height: 36rem;
-        min-width: 21rem;
+
+            min-width: 21rem;
     }
     :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul{
         margin: -1.5rem -3rem 0rem 8rem;
@@ -1046,8 +1049,56 @@ nav > ul{
         text-align: center;
     }
     
-}
-@media screen and (max-width : 700px) {
+} */
+@media screen and (max-width : 1037px) {
+    .img-6-2 > img {
+        height: 18%;
+        width: 29%;
+        margin: 0rem 10rem 0rem 8rem;
+    }
+    .img-6-3 > img {
+        height: 16%;
+        width: 25%;
+        margin: -1rem 10rem 1.5rem 8rem;
+    }
+    .page-6{
+        height: 235vh;
+    }
+    .pricing > .sub{
+        width: 56%;
+        max-width: 18rem;
+        height: 27rem;
+
+            min-width: 21rem;
+    }
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    /* .pricing > .sub {
+        height: 27rem;
+    } */
+    :where(.sub1--option-1 > ul,.sub1--option-2 > ul,.sub1--option-3 > ul) > li {
+        margin: 0.5rem 0rem 0rem 0rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > p {
+        margin: 0;
+     font-size: 1.3rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul {
+        font-size: 1.1rem;
+    }
+    .sub1--option-1 > button {
+        margin: 0rem 6rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button {
+        padding: 0;
+        width: 49%;
+        height: 2rem;
+        border-radius: 10px;
+        margin: 0px 6rem;
+    }
     .head-6 > h1 {
         font-size: 12vw;
         font-weight: 100;
@@ -1065,7 +1116,60 @@ nav > ul{
         margin: 0;
     }
     :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > ul {
-        margin: -1.5rem -3rem 0rem 3rem;
+        margin: -1.5rem -3rem -0.6rem 3rem;
+    }
+}
+@media screen and (max-width: 530px) {
+    .img-6-2{
+      text-align: center;
+    }
+    .head-6 > h1 {
+        font-size: 10vw;
+        letter-spacing: 0;
+    }
+    .pricing > .sub {
+        height: 17rem;
+        min-width: 17rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > h1 {
+        padding: 0;
+        font-size: 1.6rem;
+    }
+    .img-6 > img {
+        width: 20%;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > p {
+        margin: -1rem 1rem 0rem 0rem;
+        font-size: 1rem;
+    }
+    :where(.sub1--option-1 > p,.sub1--option-2 > p,.sub1--option-3 >p) > span {
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.3rem;
+    }
+    :where(.sub1--option-1 > ul,.sub1--option-2 > ul,.sub1--option-3 > ul) > li {
+        list-style-image: url(../IMAGE/check-circle-32.png);
+        margin: 0.1rem 0rem 0rem 0rem;
+        font-size: 1rem;
+    }
+    :where(.sub1--option-1,.sub1--option-2,.sub1--option-3) > button {
+        margin: 0rem 4rem !important;
+        width: 48%;
+        height: 14%;
+        padding: 0;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+    .img-6-2 > img {
+        height: 19%;
+        width: 25%;
+        margin: 0;
+        margin-bottom: 0.2rem;
+    }
+    .img-6-3 > img {
+        height: 16%;
+        width: 18%;
+        padding-bottom: 0.4rem;
+        margin: 0rem 10rem 0.5rem 8rem;
     }
 }
 /* page-7 */
